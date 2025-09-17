@@ -1,0 +1,13 @@
+Una vez cargado todo tienen que crear la base de datos, de nombre prisma_demo
+
+Crear o modificar el .env para que se conecte a tu base, con tu usaurio
+
+Despues de crear la base tienen que darle los permisos al usuario del .env
+
+Despues npm install
+
+npx prisma generate 
+
+npx prisma migrate dev
+
+y ya funciona todo

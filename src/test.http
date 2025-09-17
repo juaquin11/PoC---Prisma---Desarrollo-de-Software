@@ -1,0 +1,11 @@
+### obtener un dish
+
+GET http://localhost:3000/users
+
+###obtener todos los dishes
+
+GET http://localhost:3000/users/2
+
+
+
+
