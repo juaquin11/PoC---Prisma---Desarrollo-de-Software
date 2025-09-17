@@ -2,6 +2,11 @@ Una vez cargado todo tienen que crear la base de datos, de nombre prisma_demo
 
 Crear o modificar el .env para que se conecte a tu base, con tu usaurio
 
+DATABASE_URL="mysql://USUARIO:CONTRASEÑAUSUARIO@localhost:3306/NOMBREBD"
+
+# Puerto del servidor (opcional)
+PORT=3000
+
 Despues de crear la base tienen que darle los permisos al usuario del .env
 
 Despues npm install
