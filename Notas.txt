@@ -18,3 +18,27 @@ npx prisma migrate dev
 instalar extension Rest Client para hacer peticiones (es como insomnia)
 
 y ya funciona todo
+
+INSERTS BD
+
+INSERT INTO User (name, email, createdAt, updatedAt) VALUES
+('Juan Pérez', 'juan.perez@example.com', NOW(), NOW()),
+('María García', 'maria.garcia@example.com', NOW(), NOW()),
+('Carlos López', 'carlos.lopez@example.com', NOW(), NOW());
+
+-- Luego insertar tareas (tabla hija con foreign key)
+INSERT INTO Task (title, description, completed, userId, createdAt, updatedAt) VALUES
+-- Tareas para Juan Pérez (userId = 1)
+('Aprender Prisma ORM', 'Estudiar la documentación oficial y crear proyecto de prueba', false, 1, NOW(), NOW()),
+('Configurar base de datos MySQL', 'Instalar MySQL y configurar conexión con Prisma', true, 1, NOW(), NOW()),
+('Implementar API REST', 'Crear endpoints CRUD para usuarios y tareas', false, 1, NOW(), NOW()),
+
+-- Tareas para María García (userId = 2)
+('Revisar código del proyecto', 'Hacer code review del nuevo feature desarrollado', false, 2, NOW(), NOW()),
+('Actualizar documentación técnica', 'Documentar los nuevos endpoints de la API', true, 2, NOW(), NOW()),
+('Escribir tests unitarios', 'Crear tests para validar funcionalidad de la API', false, 2, NOW(), NOW()),
+
+-- Tareas para Carlos López (userId = 3)
+('Deploy a producción', 'Configurar servidor y realizar deploy de la aplicación', false, 3, NOW(), NOW()),
+('Optimizar consultas SQL', 'Mejorar performance de las queries más lentas', true, 3, NOW(), NOW()),
+('Configurar monitoreo', 'Implementar logs y métricas para el sistema', false, 3, NOW(), NOW());
