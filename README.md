@@ -1,6 +1,6 @@
 # PoC---Prisma---Desarrollo-de-Software
 
-integrantes:
+integrantes: <br>
 Peralta, Joaquin   - 52151 <br>
 Waniewski, Albano  - 52706 <br>
 Levrand, Tomás     - 52206 <br>
