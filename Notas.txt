@@ -15,4 +15,6 @@ npx prisma generate
 
 npx prisma migrate dev
 
+instalar extension Rest Client para hacer peticiones (es como insomnia)
+
 y ya funciona todo
