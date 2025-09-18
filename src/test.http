@@ -1,11 +1,62 @@
-### obtener un dish
+### obtener todos los usuarios
 
 GET http://localhost:3000/users
 
-###obtener todos los dishes
+###obtener usuario 2 con sus tareas
 
 GET http://localhost:3000/users/2
 
 
+### POST /users - Crear nuevo usuario
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Michael Scott",
+    "email": "michscot@gmail.com"
+}
+
+### PUT /users/:id Actualizar usuario
+
+PUT http://localhost:3000/users/2
+Content-Type: application/json
+
+{
+    "name": "Mariano Martin",
+    "email": "marian@gmail.com"
+}
+
+### Delete /users/:id
+DELETE http://localhost:3000/users/2
 
 
+###'GET /tasks' 'Obtener todas las tareas'
+GET http://localhost:3000/tasks
+        
+###'GET /tasks/:id': 'Obtener tarea por ID'
+GET http://localhost:3000/tasks/1
+        
+###'POST /tasks': 'Crear nueva tarea'
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+    "title": "Tareasa",
+    "description": "Tarea muy dificil",
+    "completed": false,
+    "userId": 1
+}
+        
+###'PUT /tasks/:id': 'Actualizar tarea'
+PUT http://localhost:3000/tasks/1
+Content-Type: application/json
+
+{
+    "title": "Tarea actualizada",
+    "description": "Tarea actualizada descripcion",
+    "completed": true
+}
+       
+###'DELETE /tasks/:id': 'Eliminar tarea'
+DELETE http://localhost:3000/tasks/1
